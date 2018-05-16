@@ -79,19 +79,20 @@
 		</dependency>
   </dependencies>
 
-	<distributionManagement>
-	    <repository>
-	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://localhost:9090/mithuntechnologies/repository/maven-releases/</url>
-	    </repository>
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://localhost:9090/mithuntechnologies/repository/maven-snapshots</url>
-	    </snapshotRepository>
-	</distributionManagement>
-	
+	 <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>LAPTOP-DOEBAANR-releases</name>
+        <url>http://localhost:8081/artifactory/LocalRepo1</url>
+    </repository>
+
+   <snapshotRepository>
+        <id>snapshots</id>
+        <name>LAPTOP-DOEBAANR-snapshots</name>
+        <url>http://localhost:8081/artifactory/NaazMavenRepo</url>
+    </snapshotRepository>
+</distributionManagement>
+
 	
   <build>
     <plugins>
